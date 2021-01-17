@@ -60,7 +60,7 @@
                     Эффективные решения для вашего бизнеса
                 </h1>
                 
-                <button class="button">Заказать услугу</button>
+                <button class="button" data-modal-open>Заказать услугу</button>
             </div>
         </div>
     </section>
@@ -406,14 +406,17 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <a class="icon-close" href="" aria-label="крестик закрытия окна">
-                <svg class="icon-link" width="30" height="30">
+            <button class="icon-close" type="button" data-modal-close>
+                <svg class="icon-link" width="11" height="11">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
-            </a>
+            </button>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
